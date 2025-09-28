@@ -35,6 +35,7 @@ export default function AppInfo() {
         <Text style={styles.sectionTitle}>Platform Configuration</Text>
         <InfoItem label="Orientation" value={appConfig?.orientation || "-"} />
         <InfoItem label="User Interface" value={appConfig?.userInterfaceStyle || "-"} />
+        {/* @ts-ignore */}
         <InfoItem label="Scheme" value={appConfig?.scheme || "-"} />
       </View>
 
@@ -48,6 +49,7 @@ export default function AppInfo() {
 
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Updates</Text>
+        {/* @ts-ignore */}
         <InfoItem label="Runtime Policy" value={appConfig?.runtimeVersion?.policy || "-"} />
         <InfoItem label="Update URL" value={appConfig?.updates?.url || "-"} />
       </View>
